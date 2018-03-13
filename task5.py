@@ -1,9 +1,10 @@
-list="qwertyuiopasdfghjklzxcvbnm"
+"""hw2_t5"""
+# pylint: disable=invalid-name
+liste = "qwertyuiopasdfghjklzxcvbnm"
 print("enter keyboard letter")
-letter=str(input())	
-if letter=="m":
-	print(list[0]) 
+letter = str(input())
+if letter == "m":
+    print(liste[0])
 else:
-	index=list.find(letter)
-	print(list[index+1])
-
+    index = liste.find(letter)
+print(liste[index+1])
