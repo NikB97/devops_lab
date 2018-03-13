@@ -1,16 +1,17 @@
-from collections import OrderedDict
-dict = OrderedDict()
+"""hw2_t4"""
+# pylint: disable=invalid-name
+dicte = {}
 
 print("enter number of distinct words:")
-number=int(input())
+number = int(input())
 
 print("enter words:")
 for i in range(number):
-	key = input()
-	if not key in dict.keys():
-		dict.update({key : 1})
-		continue
-	dict[key] += 1
+    key = input()
+    if key not in dicte.keys():
+        dicte.update({key: 1})
+        continue
+    dicte[key] += 1
 
-print(len(dict.keys()))
-print(*dict.values())
+print(len(dicte.keys()))
+print(*dicte.values())
